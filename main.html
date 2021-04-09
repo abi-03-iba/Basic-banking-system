@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+  font-family: "Lato", sans-serif;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("giphy.gif");
+
+  min-height: 750px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:teal;
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="main.html">Home</a>
+  <a href="users.php">Customer List</a>
+  <a href="transaction.php">History</a>
+</div>
+
+<div class="main">
+<div class="bg-img">
+  <center><h2>Welcome to XYZ Bank!!</h2></center>
+<div class="w3-container">
+<div class="w3-bar">
+  <a href="users.php"><button class="w3-bar-item w3-button w3-pink" style="width:50%" >SEND MONEY</button></a>
+  <a href="transaction.php"><button class="w3-bar-item w3-button w3-teal" style="width:50%" >TRANSCTION HISTORY</button></a>
+  
+</div>
+</div>
+</div> 
+<div class="footer">
+	<center><h4>XYZ Bank © 2021</h4></center
+</div>
+</div>
+
+</body>
+</html> 
